@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kyu Hwan Choi</title>
+        <link href="styles/theme2.css" type="text/css" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+            rel="stylesheet">
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/formvalidation.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class= header>
+                <h1 id="top" class=top><a href="#top"> Kyu Hwan Choi</a></h1>
+                <div class= row_header>
+                    <nav>
+                        <ul class= navlist>
+                            <li><a href="#about"> ABOUT</a></li>
+                            <li><a href="#projects"> PROJECTS</a></li>
+                            <li><a href="#contacts"> CONTACT</a></li>
+                            <li><a href="src/Kyu_Resume.pdf"> RESUME</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class= open>
+            <h1 class= welcome> Welcome </h1>
+            <a class= view href="#projects"> View my work </a>
+        </section>
+        <main>
+            <hr id="about">
+            <h2 class= middletext> ABOUT </h2>
+            <hr class= short>
+            <div class= row1>
+                <div class= col1>
+                    <img class= profile src="src/profile.jpg" alt="Profile" />
+                </div>
+                <div class= col2>
+                    <h2 class= intro> Hi, I'm Kyu.</h2>
+                    <p class= intro1>I am currently a Sophomore intending to
+                        major Computer Science at Cornell University in the
+                        College of Engineering. </p>
+                    <p class= intro1>I am interesting in crating products that
+                        would impact the lives of individuals. I am also
+                        interested in delivering the product in the form of
+                        entrepreneurship.</p>
+                    <p class= intro1>On campus, I am commited as the Alumni
+                        Chair of Cornell Undergraduate Asia Business Society and
+                        a member of Theta Tau: Professional
+                        Engineering Fraternity.</p>
+                    <p class= intro1>If you find my projects interesting and
+                        would like to talk more, I would be more than happy to!
+                        Please contact me at <a class=email
+                            href="mailto:kyuhwanchoi0423@gmail.com">
+                            kyuhwanchoi0423@gmail.com.</a></p>
+                </div>
+            </div>
+            <hr id="projects">
+            <h2 class= middletext> PROJECTS </h2>
+            <hr class= short>
+            <h2 class= middletext2> 2019 </h2>
+            <div class= row2>
+                <div class= col1>
+                    <h2 class= plainmiddle> Cornell Secret Santa</h2>
+                    <hr class= short>
+                    <h3 class= plainmiddle> Front-End Developer </h3>
+                    <div class=imgholder>
+                        <a href="https://cornell-secret-santa.firebaseapp.com/"><img
+                                class= project_img src="src/secretsanta.png"
+                                alt="Secret Santa" /></a>
+                    </div>
+                    <!-- <h2 class = middletext3> Cornell Secret Santa </h2> -->
+                </div>
+                <div class= col1>
+                    <h2 class= plainmiddle> Second Project: Alumni Database
+                    </h2>
+                    <hr class= short>
+                    <h3 class= plainmiddle> In Progress </h3>
+                    <div class=imgholder>
+                        <img class= project_img src="src/cuabs.png" alt="CUABS
+                            Logo" />
+                    </div>
+
+                </div>
+            </div>
+            <hr id="contacts">
+            <h2 class= middletext> CONTACT </h2>
+            <hr class= short>
+            <form id="contactform" method="post" action="php/email.php"
+                novalidate>
+                <div>
+                    <h2> Name: </h2>
+                    <p id="name_error" class="alert hidden"> Please write your
+                        first name </p>
+                    <input type="text" id="name" name="name" required/>
+                </div>
+                <div>
+                    <h2> Email: </h2>
+                    <p id="email_error" class="alert hidden"> Please write
+                        proper email </p>
+                    <input type="email" id="email" name="email" required/>
+                </div>
+                <div>
+                    <h2> Subject: </h2>
+                    <p id="subject_error" class="alert hidden"> Please write
+                        the subject </p>
+                    <input type="text" id="subject" name="subject" required/>
+                </div>
+                <div>
+                    <h2> Message: </h2>
+                    <p id="message_error" class="alert hidden"> Please write
+                        the message </p>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class=buttonalign>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+
+        </main>
+        <footer>
+            <p id="contact" class=bottom> Copyright &#9400; Kyu Hwan Choi</p>
+        </footer>

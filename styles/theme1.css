@@ -1,0 +1,97 @@
+html {
+        background-color: #000000;
+        margin: 25px;
+}
+body {
+    font-family: Georgia;
+    color: #000000;
+}
+
+.desp {
+    justify-content: center;
+}
+
+.thick {
+    border-width: 2px;
+}
+
+main {
+    margin: 30px 0px 30px 0px;
+    background-color: rgb(255,255,255);
+}
+header{
+    background-color: #000000;
+    color: rgb(255,255,255);
+    justify-content: center;
+    border-style: solid;
+    border-top-color: rgb(0,0,0);
+    border-left-color: rgb(0,0,0);
+    border-right-color: rgb(0,0,0);
+    border-bottom-width: 3px;
+}
+
+.top {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.profile {
+    margin: 30px;
+    width: 100%;
+}
+
+nav{
+    justify-content: center;
+}
+
+.navlist {
+    display: flex;
+    justify-content: center;
+}
+
+.navlist li{
+    display: inline-block;
+    justify-content: right;
+    border: solid;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-width: 1px;
+    color: rgb(255,255,255);
+    text-decoration: none;
+    margin-right: 40px;
+    margin-top: 20px;
+    font-size: 18px;
+
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.col1{
+    width: 30%;
+}
+
+.col2 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-left: 5%;
+    flex-grow: 2;
+}
+
+ul a{
+    text-decoration: underline;
+    color: rgb(255,255,255);
+}
+
+footer{
+    margin-top: 10px;
+    color: rgb(255,255,255);
+    background: rgb(75, 75, 75);
+    border: solid;
+}
